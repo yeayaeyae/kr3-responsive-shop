@@ -5,25 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>TechStore — интернет-магазин электроники</title>
-    <meta
-        name="description"
-        content="TechStore — интернет-магазин современной электроники."
-    >
+    <meta name="description" content="TechStore — интернет-магазин современной электроники.">
 
     <link rel="stylesheet" href="css/style.css">
-</head>
+<link rel="stylesheet" href="css/responsive.css"><script>document.documentElement.classList.add("js");</script></head>
 
 <body>
 
-<header class="header">
+<a class="skip-link" href="#main-content">Перейти к содержимому</a><header class="header">
     <div class="container header__inner">
 
         <a class="logo" href="index.html">
             TechStore
         </a>
 
-        <nav class="nav" aria-label="Основная навигация">
-            <a class="nav__link nav__link--active" href="index.html">
+        <button class="nav-toggle" type="button" aria-controls="main-nav" aria-expanded="false">Меню</button><nav class="nav" aria-label="Основная навигация" id="main-nav">
+            <a class="nav__link nav__link--active" href="index.html" aria-current="page">
                 Главная
             </a>
 
@@ -47,7 +44,7 @@
     </div>
 </header>
 
-<main>
+<main id="main-content" tabindex="-1">
 
     <section class="hero" id="about">
         <div class="container hero__content">
@@ -69,9 +66,9 @@
                 <a class="button" href="catalog.html">
                     Перейти в каталог
                 </a>
-            </div>
+            <button class="button button--secondary" type="button" data-modal-open>Быстрая заявка</button></div>
 
-        </div>
+        <picture class="hero__art"><source media="(max-width: 639px)" srcset="images/hero-compact.svg"><img src="images/hero-wide.svg" width="800" height="600" alt="Смартфон и ноутбук из коллекции TechStore" fetchpriority="high"></source></picture></div>
     </section>
 
     <section class="advantages" id="advantages">
@@ -129,11 +126,7 @@
             <div class="products__grid">
 
                 <article class="product-card">
-                    <div class="product-card__image">
-                        📱
-                    </div>
-
-                    <div class="product-card__content">
+                    <div class="product-card__image"><picture><source type="image/webp" srcset="images/phone-480.webp 480w, images/phone-960.webp 960w" sizes="(min-width: 1280px) 360px, (min-width: 640px) 45vw, 100vw"><img src="images/phone.svg" width="800" height="500" alt="Смартфон Pro X" decoding="async" loading="lazy"></source></picture></div><div class="product-card__content">
                         <h3 class="product-card__title">
                             Смартфон Pro X
                         </h3>
@@ -154,11 +147,7 @@
                 </article>
 
                 <article class="product-card">
-                    <div class="product-card__image">
-                        💻
-                    </div>
-
-                    <div class="product-card__content">
+                    <div class="product-card__image"><picture><source type="image/webp" srcset="images/laptop-480.webp 480w, images/laptop-960.webp 960w" sizes="(min-width: 1280px) 360px, (min-width: 640px) 45vw, 100vw"><img src="images/laptop.svg" width="800" height="500" alt="Ноутбук Air 15" decoding="async" loading="lazy"></source></picture></div><div class="product-card__content">
                         <h3 class="product-card__title">
                             Ноутбук Air 15
                         </h3>
@@ -179,11 +168,7 @@
                 </article>
 
                 <article class="product-card">
-                    <div class="product-card__image">
-                        🎧
-                    </div>
-
-                    <div class="product-card__content">
+                    <div class="product-card__image"><picture><source type="image/webp" srcset="images/headphones-480.webp 480w, images/headphones-960.webp 960w" sizes="(min-width: 1280px) 360px, (min-width: 640px) 45vw, 100vw"><img src="images/headphones.svg" width="800" height="500" alt="Наушники Sound Pro" decoding="async" loading="lazy"></source></picture></div><div class="product-card__content">
                         <h3 class="product-card__title">
                             Наушники Sound Pro
                         </h3>
@@ -232,44 +217,32 @@
 </main>
 
     <!-- Модальное окно -->
-    <dialog class="modal" id="request-modal">
+    <dialog class="modal" id="request-modal" aria-labelledby="request-modal-title" aria-describedby="request-modal-description">
 
         <div class="modal__content">
 
-            <button
-                class="modal__close"
-                type="button"
-                data-modal-close
-                aria-label="Закрыть окно"
-            >
+            <button class="modal__close" type="button" data-modal-close aria-label="Закрыть окно">
                 ×
             </button>
 
-            <h2 class="modal__title">
+            <h2 class="modal__title" id="request-modal-title">
                 Быстрая заявка
             </h2>
 
-            <p class="modal__text">
+            <p class="modal__text" id="request-modal-description">
                 Оставьте свои контактные данные,
                 и мы свяжемся с вами.
             </p>
 
             <form class="modal__form">
 
-                <div class="form__group">
+                <p class="form__note">Учебная форма: данные проверяются только в браузере, не отправляются и не сохраняются.</p><div class="form__group">
 
                     <label class="form__label" for="modal-name">
                         Имя
                     </label>
 
-                    <input
-                        class="form__input"
-                        type="text"
-                        id="modal-name"
-                        name="name"
-                        placeholder="Ваше имя"
-                        required
-                    >
+                    <input class="form__input" type="text" id="modal-name" name="name" placeholder="Ваше имя" required autocomplete="name">
 
                 </div>
 
@@ -279,22 +252,13 @@
                         Телефон
                     </label>
 
-                    <input
-                        class="form__input"
-                        type="tel"
-                        id="modal-phone"
-                        name="phone"
-                        placeholder="+7 (999) 123-45-67"
-                        required
-                    >
+                    <input class="form__input" type="tel" id="modal-phone" name="phone" placeholder="+7 (999) 123-45-67" required autocomplete="tel" inputmode="tel">
 
                 </div>
 
-                <button class="button" type="submit">
-                    Отправить заявку
-                </button>
+                <button class="button" type="submit">Проверить заявку</button>
 
-            </form>
+            <p class="form__status" role="status" aria-live="polite" tabindex="-1"></p></form>
 
         </div>
 
@@ -316,6 +280,5 @@
     </div>
 </footer>
 
-<script src="js/main.js"></script>
-</body>
+<script src="js/products.js"></script><script src="js/main.js"></script></body>
 </html>

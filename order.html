@@ -5,24 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Оформление заявки — TechStore</title>
-    <meta
-        name="description"
-        content="Оформление заявки на покупку электроники в TechStore."
-    >
+    <meta name="description" content="Оформление заявки на покупку электроники в TechStore.">
 
     <link rel="stylesheet" href="css/style.css">
-</head>
+<link rel="stylesheet" href="css/responsive.css"><script>document.documentElement.classList.add("js");</script></head>
 
 <body>
 
-<header class="header">
+<a class="skip-link" href="#main-content">Перейти к содержимому</a><header class="header">
     <div class="container header__inner">
 
         <a class="logo" href="index.html">
             TechStore
         </a>
 
-        <nav class="nav" aria-label="Основная навигация">
+        <button class="nav-toggle" type="button" aria-controls="main-nav" aria-expanded="false">Меню</button><nav class="nav" aria-label="Основная навигация" id="main-nav">
 
             <a class="nav__link" href="index.html">
                 Главная
@@ -36,7 +33,7 @@
                 Товар
             </a>
 
-            <a class="nav__link nav__link--active" href="order.html">
+            <a class="nav__link nav__link--active" href="order.html" aria-current="page">
                 Заказать
             </a>
 
@@ -50,7 +47,7 @@
 </header>
 
 
-<main>
+<main id="main-content" tabindex="-1">
 
     <section class="page-hero">
         <div class="container">
@@ -119,22 +116,15 @@
                 </div>
 
 
-                <form class="order-form" action="#" method="post">
+                <form class="order-form">
 
-                    <div class="form__group">
+                    <p class="form__note">Учебная форма: данные проверяются только в браузере, не отправляются и не сохраняются.</p><div class="form__group">
 
                         <label class="form__label" for="name">
                             Имя
                         </label>
 
-                        <input
-                            class="form__input"
-                            type="text"
-                            id="name"
-                            name="name"
-                            placeholder="Введите ваше имя"
-                            required
-                        >
+                        <input class="form__input" type="text" id="name" name="name" placeholder="Введите ваше имя" required autocomplete="name">
 
                     </div>
 
@@ -145,14 +135,7 @@
                             Телефон
                         </label>
 
-                        <input
-                            class="form__input"
-                            type="tel"
-                            id="phone"
-                            name="phone"
-                            placeholder="+7 (___) ___-__-__"
-                            required
-                        >
+                        <input class="form__input" type="tel" id="phone" name="phone" placeholder="+7 (___) ___-__-__" required autocomplete="tel" inputmode="tel">
 
                     </div>
 
@@ -163,14 +146,7 @@
                             E-mail
                         </label>
 
-                        <input
-                            class="form__input"
-                            type="email"
-                            id="email"
-                            name="email"
-                            placeholder="example@mail.ru"
-                            required
-                        >
+                        <input class="form__input" type="email" id="email" name="email" placeholder="example@mail.ru" required autocomplete="email">
 
                     </div>
 
@@ -181,12 +157,7 @@
                             Товар
                         </label>
 
-                        <select
-                            class="form__input"
-                            id="product"
-                            name="product"
-                            required
-                        >
+                        <select class="form__input" id="product" name="product" required>
 
                             <option value="">
                                 Выберите товар
@@ -227,16 +198,7 @@
                             Количество
                         </label>
 
-                        <input
-                            class="form__input"
-                            type="number"
-                            id="quantity"
-                            name="quantity"
-                            min="1"
-                            max="10"
-                            value="1"
-                            required
-                        >
+                        <input class="form__input" type="number" id="quantity" name="quantity" min="1" max="10" value="1" required>
 
                     </div>
 
@@ -249,12 +211,7 @@
 
                         <label class="form__radio">
 
-                            <input
-                                type="radio"
-                                name="contact"
-                                value="phone"
-                                checked
-                            >
+                            <input type="radio" name="contact" value="phone" checked>
 
                             Телефон
 
@@ -263,11 +220,7 @@
 
                         <label class="form__radio">
 
-                            <input
-                                type="radio"
-                                name="contact"
-                                value="email"
-                            >
+                            <input type="radio" name="contact" value="email">
 
                             E-mail
 
@@ -282,24 +235,14 @@
                             Комментарий
                         </label>
 
-                        <textarea
-                            class="form__input form__textarea"
-                            id="comment"
-                            name="comment"
-                            rows="5"
-                            placeholder="Дополнительная информация..."
-                        ></textarea>
+                        <textarea class="form__input form__textarea" id="comment" name="comment" rows="5" placeholder="Дополнительная информация..."></textarea>
 
                     </div>
 
 
                     <label class="form__checkbox">
 
-                        <input
-                            type="checkbox"
-                            name="agreement"
-                            required
-                        >
+                        <input type="checkbox" name="agreement" required>
 
                         <span>
                             Я согласен на обработку указанных данных.
@@ -308,11 +251,9 @@
                     </label>
 
 
-                    <button class="button form__button" type="submit">
-                        Отправить заявку
-                    </button>
+                    <button class="button form__button" type="submit">Проверить заявку</button>
 
-                </form>
+                <p class="form__status" role="status" aria-live="polite" tabindex="-1"></p></form>
 
             </div>
 
@@ -336,5 +277,5 @@
     </div>
 </footer>
 
-</body>
+<script src="js/products.js"></script><script src="js/main.js"></script></body>
 </html>

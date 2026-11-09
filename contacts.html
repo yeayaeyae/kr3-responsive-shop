@@ -5,24 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Контакты — TechStore</title>
-    <meta
-        name="description"
-        content="Контактная информация и форма обратной связи магазина TechStore."
-    >
+    <meta name="description" content="Контактная информация и форма обратной связи магазина TechStore.">
 
     <link rel="stylesheet" href="css/style.css">
-</head>
+<link rel="stylesheet" href="css/responsive.css"><script>document.documentElement.classList.add("js");</script></head>
 
 <body>
 
-<header class="header">
+<a class="skip-link" href="#main-content">Перейти к содержимому</a><header class="header">
     <div class="container header__inner">
 
         <a class="logo" href="index.html">
             TechStore
         </a>
 
-        <nav class="nav" aria-label="Основная навигация">
+        <button class="nav-toggle" type="button" aria-controls="main-nav" aria-expanded="false">Меню</button><nav class="nav" aria-label="Основная навигация" id="main-nav">
 
             <a class="nav__link" href="index.html">
                 Главная
@@ -40,7 +37,7 @@
                 Заказать
             </a>
 
-            <a class="nav__link nav__link--active" href="contacts.html">
+            <a class="nav__link nav__link--active" href="contacts.html" aria-current="page">
                 Контакты
             </a>
 
@@ -50,7 +47,7 @@
 </header>
 
 
-<main>
+<main id="main-content" tabindex="-1">
 
     <section class="page-hero">
         <div class="container">
@@ -150,22 +147,15 @@
                         Обратная связь
                     </h2>
 
-                    <form class="contact-form" action="#" method="post">
+                    <form class="contact-form">
 
-                        <div class="form__group">
+                        <p class="form__note">Учебная форма: данные проверяются только в браузере, не отправляются и не сохраняются.</p><div class="form__group">
 
                             <label class="form__label" for="contact-name">
                                 Имя
                             </label>
 
-                            <input
-                                class="form__input"
-                                type="text"
-                                id="contact-name"
-                                name="name"
-                                placeholder="Ваше имя"
-                                required
-                            >
+                            <input class="form__input" type="text" id="contact-name" name="name" placeholder="Ваше имя" required autocomplete="name">
 
                         </div>
 
@@ -176,14 +166,7 @@
                                 E-mail
                             </label>
 
-                            <input
-                                class="form__input"
-                                type="email"
-                                id="contact-email"
-                                name="email"
-                                placeholder="example@mail.ru"
-                                required
-                            >
+                            <input class="form__input" type="email" id="contact-email" name="email" placeholder="example@mail.ru" required autocomplete="email">
 
                         </div>
 
@@ -194,26 +177,14 @@
                                 Сообщение
                             </label>
 
-                            <textarea
-                                class="form__input form__textarea"
-                                id="contact-message"
-                                name="message"
-                                rows="6"
-                                placeholder="Введите ваше сообщение..."
-                                required
-                            ></textarea>
+                            <textarea class="form__input form__textarea" id="contact-message" name="message" rows="6" placeholder="Введите ваше сообщение..." required></textarea>
 
                         </div>
 
 
-                        <button
-                            class="button"
-                            type="submit"
-                        >
-                            Отправить сообщение
-                        </button>
+                        <button class="button" type="submit">Проверить заявку</button>
 
-                    </form>
+                    <p class="form__status" role="status" aria-live="polite" tabindex="-1"></p></form>
 
                 </div>
 
@@ -258,5 +229,5 @@
     </div>
 </footer>
 
-</body>
+<script src="js/products.js"></script><script src="js/main.js"></script></body>
 </html>
