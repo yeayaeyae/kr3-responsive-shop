@@ -1,0 +1,303 @@
+{
+  "checkedAt": "2026-11-09T21:17:51.101Z",
+  "results": [
+    {
+      "file": "index.html",
+      "width": 360,
+      "overflow": false,
+      "h1": 1,
+      "broken": [],
+      "images": [
+        "http://127.0.0.1:4189/images/hero-compact.svg",
+        "http://127.0.0.1:4189/images/phone-480.webp",
+        "http://127.0.0.1:4189/images/laptop-480.webp",
+        "http://127.0.0.1:4189/images/headphones-480.webp"
+      ],
+      "violations": []
+    },
+    {
+      "file": "index.html",
+      "width": 430,
+      "overflow": false,
+      "h1": 1,
+      "broken": [],
+      "images": [
+        "http://127.0.0.1:4189/images/hero-compact.svg",
+        "http://127.0.0.1:4189/images/phone-480.webp",
+        "http://127.0.0.1:4189/images/laptop-480.webp",
+        "http://127.0.0.1:4189/images/headphones-480.webp"
+      ],
+      "violations": []
+    },
+    {
+      "file": "index.html",
+      "width": 768,
+      "overflow": false,
+      "h1": 1,
+      "broken": [],
+      "images": [
+        "http://127.0.0.1:4189/images/hero-wide.svg",
+        "http://127.0.0.1:4189/images/phone-480.webp",
+        "http://127.0.0.1:4189/images/laptop-480.webp",
+        "http://127.0.0.1:4189/images/headphones-480.webp"
+      ],
+      "violations": []
+    },
+    {
+      "file": "index.html",
+      "width": 1024,
+      "overflow": false,
+      "h1": 1,
+      "broken": [],
+      "images": [
+        "http://127.0.0.1:4189/images/hero-wide.svg",
+        "http://127.0.0.1:4189/images/phone-480.webp",
+        "http://127.0.0.1:4189/images/laptop-480.webp",
+        "http://127.0.0.1:4189/images/headphones-480.webp"
+      ],
+      "violations": []
+    },
+    {
+      "file": "index.html",
+      "width": 1440,
+      "overflow": false,
+      "h1": 1,
+      "broken": [],
+      "images": [
+        "http://127.0.0.1:4189/images/hero-wide.svg",
+        "http://127.0.0.1:4189/images/phone-480.webp",
+        "http://127.0.0.1:4189/images/laptop-480.webp",
+        "http://127.0.0.1:4189/images/headphones-480.webp"
+      ],
+      "violations": []
+    },
+    {
+      "file": "catalog.html",
+      "width": 360,
+      "overflow": false,
+      "h1": 1,
+      "broken": [],
+      "images": [
+        "http://127.0.0.1:4189/images/phone-480.webp",
+        "http://127.0.0.1:4189/images/phone-480.webp",
+        "http://127.0.0.1:4189/images/laptop-480.webp",
+        "http://127.0.0.1:4189/images/laptop-480.webp",
+        "http://127.0.0.1:4189/images/headphones-480.webp",
+        "http://127.0.0.1:4189/images/headphones-480.webp"
+      ],
+      "violations": []
+    },
+    {
+      "file": "catalog.html",
+      "width": 430,
+      "overflow": false,
+      "h1": 1,
+      "broken": [],
+      "images": [
+        "http://127.0.0.1:4189/images/phone-480.webp",
+        "http://127.0.0.1:4189/images/phone-480.webp",
+        "http://127.0.0.1:4189/images/laptop-480.webp",
+        "http://127.0.0.1:4189/images/laptop-480.webp",
+        "http://127.0.0.1:4189/images/headphones-480.webp",
+        "http://127.0.0.1:4189/images/headphones-480.webp"
+      ],
+      "violations": []
+    },
+    {
+      "file": "catalog.html",
+      "width": 768,
+      "overflow": false,
+      "h1": 1,
+      "broken": [],
+      "images": [
+        "http://127.0.0.1:4189/images/phone-480.webp",
+        "http://127.0.0.1:4189/images/phone-480.webp",
+        "http://127.0.0.1:4189/images/laptop-480.webp",
+        "http://127.0.0.1:4189/images/laptop-480.webp",
+        "http://127.0.0.1:4189/images/headphones-480.webp",
+        "http://127.0.0.1:4189/images/headphones-480.webp"
+      ],
+      "violations": []
+    },
+    {
+      "file": "catalog.html",
+      "width": 1024,
+      "overflow": false,
+      "h1": 1,
+      "broken": [],
+      "images": [
+        "http://127.0.0.1:4189/images/phone-480.webp",
+        "http://127.0.0.1:4189/images/phone-480.webp",
+        "http://127.0.0.1:4189/images/laptop-480.webp",
+        "http://127.0.0.1:4189/images/laptop-480.webp",
+        "http://127.0.0.1:4189/images/headphones-480.webp",
+        "http://127.0.0.1:4189/images/headphones-480.webp"
+      ],
+      "violations": []
+    },
+    {
+      "file": "catalog.html",
+      "width": 1440,
+      "overflow": false,
+      "h1": 1,
+      "broken": [],
+      "images": [
+        "http://127.0.0.1:4189/images/phone-480.webp",
+        "http://127.0.0.1:4189/images/phone-480.webp",
+        "http://127.0.0.1:4189/images/laptop-480.webp",
+        "http://127.0.0.1:4189/images/laptop-480.webp",
+        "http://127.0.0.1:4189/images/headphones-480.webp",
+        "http://127.0.0.1:4189/images/headphones-480.webp"
+      ],
+      "violations": []
+    },
+    {
+      "file": "product.html",
+      "width": 360,
+      "overflow": false,
+      "h1": 1,
+      "broken": [],
+      "images": [
+        "http://127.0.0.1:4189/images/phone-480.webp"
+      ],
+      "violations": []
+    },
+    {
+      "file": "product.html",
+      "width": 430,
+      "overflow": false,
+      "h1": 1,
+      "broken": [],
+      "images": [
+        "http://127.0.0.1:4189/images/phone-480.webp"
+      ],
+      "violations": []
+    },
+    {
+      "file": "product.html",
+      "width": 768,
+      "overflow": false,
+      "h1": 1,
+      "broken": [],
+      "images": [
+        "http://127.0.0.1:4189/images/phone-480.webp"
+      ],
+      "violations": []
+    },
+    {
+      "file": "product.html",
+      "width": 1024,
+      "overflow": false,
+      "h1": 1,
+      "broken": [],
+      "images": [
+        "http://127.0.0.1:4189/images/phone-480.webp"
+      ],
+      "violations": []
+    },
+    {
+      "file": "product.html",
+      "width": 1440,
+      "overflow": false,
+      "h1": 1,
+      "broken": [],
+      "images": [
+        "http://127.0.0.1:4189/images/phone-480.webp"
+      ],
+      "violations": []
+    },
+    {
+      "file": "order.html",
+      "width": 360,
+      "overflow": false,
+      "h1": 1,
+      "broken": [],
+      "images": [],
+      "violations": []
+    },
+    {
+      "file": "order.html",
+      "width": 430,
+      "overflow": false,
+      "h1": 1,
+      "broken": [],
+      "images": [],
+      "violations": []
+    },
+    {
+      "file": "order.html",
+      "width": 768,
+      "overflow": false,
+      "h1": 1,
+      "broken": [],
+      "images": [],
+      "violations": []
+    },
+    {
+      "file": "order.html",
+      "width": 1024,
+      "overflow": false,
+      "h1": 1,
+      "broken": [],
+      "images": [],
+      "violations": []
+    },
+    {
+      "file": "order.html",
+      "width": 1440,
+      "overflow": false,
+      "h1": 1,
+      "broken": [],
+      "images": [],
+      "violations": []
+    },
+    {
+      "file": "contacts.html",
+      "width": 360,
+      "overflow": false,
+      "h1": 1,
+      "broken": [],
+      "images": [],
+      "violations": []
+    },
+    {
+      "file": "contacts.html",
+      "width": 430,
+      "overflow": false,
+      "h1": 1,
+      "broken": [],
+      "images": [],
+      "violations": []
+    },
+    {
+      "file": "contacts.html",
+      "width": 768,
+      "overflow": false,
+      "h1": 1,
+      "broken": [],
+      "images": [],
+      "violations": []
+    },
+    {
+      "file": "contacts.html",
+      "width": 1024,
+      "overflow": false,
+      "h1": 1,
+      "broken": [],
+      "images": [],
+      "violations": []
+    },
+    {
+      "file": "contacts.html",
+      "width": 1440,
+      "overflow": false,
+      "h1": 1,
+      "broken": [],
+      "images": [],
+      "violations": []
+    }
+  ],
+  "errors": [],
+  "missing": [],
+  "interactionChecks": "passed"
+}

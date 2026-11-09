@@ -5,29 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Каталог — TechStore</title>
-    <meta
-        name="description"
-        content="Каталог электроники TechStore: смартфоны, ноутбуки и наушники."
-    >
+    <meta name="description" content="Каталог электроники TechStore: смартфоны, ноутбуки и наушники.">
 
     <link rel="stylesheet" href="css/style.css">
-</head>
+<link rel="stylesheet" href="css/responsive.css"><script>document.documentElement.classList.add("js");</script></head>
 
 <body>
 
-<header class="header">
+<a class="skip-link" href="#main-content">Перейти к содержимому</a><header class="header">
     <div class="container header__inner">
 
         <a class="logo" href="index.html">
             TechStore
         </a>
 
-        <nav class="nav" aria-label="Основная навигация">
+        <button class="nav-toggle" type="button" aria-controls="main-nav" aria-expanded="false">Меню</button><nav class="nav" aria-label="Основная навигация" id="main-nav">
             <a class="nav__link" href="index.html">
                 Главная
             </a>
 
-            <a class="nav__link nav__link--active" href="catalog.html">
+            <a class="nav__link nav__link--active" href="catalog.html" aria-current="page">
                 Каталог
             </a>
 
@@ -47,7 +44,7 @@
     </div>
 </header>
 
-<main>
+<main id="main-content" tabindex="-1">
 
     <section class="page-hero">
         <div class="container">
@@ -74,35 +71,35 @@
 
             <div class="catalog__layout">
 
-                <aside class="catalog-filter">
+                <aside class="catalog-filter" aria-labelledby="filter-title">
 
-                    <h2 class="catalog-filter__title">
+                    <h2 class="catalog-filter__title" id="filter-title">
                         Фильтр
                     </h2>
 
-                    <div class="catalog-filter__group">
+                    <button class="button button--secondary filter-toggle" type="button" aria-controls="catalog-filters" aria-expanded="false">Показать фильтры</button><div class="filter-body" id="catalog-filters"><div class="catalog-filter__group">
 
                         <h3 class="catalog-filter__subtitle">
                             Категория
                         </h3>
 
                         <label class="catalog-filter__option">
-                            <input type="checkbox" checked>
+                            <input type="checkbox" checked value="all" name="category">
                             Все товары
                         </label>
 
                         <label class="catalog-filter__option">
-                            <input type="checkbox">
+                            <input type="checkbox" value="Смартфоны" name="category">
                             Смартфоны
                         </label>
 
                         <label class="catalog-filter__option">
-                            <input type="checkbox">
+                            <input type="checkbox" value="Ноутбуки" name="category">
                             Ноутбуки
                         </label>
 
                         <label class="catalog-filter__option">
-                            <input type="checkbox">
+                            <input type="checkbox" value="Наушники" name="category">
                             Наушники
                         </label>
 
@@ -114,29 +111,26 @@
                             Цена
                         </h3>
 
-                        <label class="catalog-filter__option">
-                            <input type="radio" name="price">
+                        <label class="catalog-filter__option"><input type="radio" name="price" value="all" checked> Любая цена</label><label class="catalog-filter__option">
+                            <input type="radio" name="price" value="low">
                             До 20 000 ₽
                         </label>
 
                         <label class="catalog-filter__option">
-                            <input type="radio" name="price">
+                            <input type="radio" name="price" value="mid">
                             20 000–50 000 ₽
                         </label>
 
                         <label class="catalog-filter__option">
-                            <input type="radio" name="price">
+                            <input type="radio" name="price" value="high">
                             Более 50 000 ₽
                         </label>
 
                     </div>
 
-                    <p class="catalog-filter__note">
-                        Фильтр демонстрационный и не изменяет
-                        список товаров.
-                    </p>
+                    <p class="catalog-filter__note">Категории и диапазон цены применяются вместе. Количество товаров обновляется автоматически.</p>
 
-                </aside>
+                <button class="button button--secondary filter-reset" type="button">Сбросить фильтры</button></div></aside>
 
 
                 <div class="catalog__content">
@@ -147,7 +141,7 @@
                             Товары
                         </h2>
 
-                        <p class="catalog__count">
+                        <p class="catalog__count" role="status" aria-live="polite" aria-atomic="true">
                             Найдено товаров: 6
                         </p>
 
@@ -158,11 +152,7 @@
 
                         <article class="product-card">
 
-                            <div class="product-card__image">
-                                📱
-                            </div>
-
-                            <div class="product-card__content">
+                            <div class="product-card__image"><picture><source type="image/webp" srcset="images/phone-480.webp 480w, images/phone-960.webp 960w" sizes="(min-width: 1280px) 360px, (min-width: 640px) 45vw, 100vw"><img src="images/phone.svg" width="800" height="500" alt="Смартфон Pro X" decoding="async" loading="lazy"></source></picture></div><div class="product-card__content">
 
                                 <p class="product-card__category">
                                     Смартфоны
@@ -181,10 +171,7 @@
                                     49 990 ₽
                                 </p>
 
-                                <a
-                                    class="button button--secondary"
-                                    href="product.html?product=phone-pro"
-                                >
+                                <a class="button button--secondary" href="product.html?product=phone-pro">
                                     Подробнее
                                 </a>
 
@@ -195,11 +182,7 @@
 
                         <article class="product-card">
 
-                            <div class="product-card__image">
-                                📱
-                            </div>
-
-                            <div class="product-card__content">
+                            <div class="product-card__image"><picture><source type="image/webp" srcset="images/phone-480.webp 480w, images/phone-960.webp 960w" sizes="(min-width: 1280px) 360px, (min-width: 640px) 45vw, 100vw"><img src="images/phone.svg" width="800" height="500" alt="Смартфон Lite" decoding="async" loading="lazy"></source></picture></div><div class="product-card__content">
 
                                 <p class="product-card__category">
                                     Смартфоны
@@ -218,10 +201,7 @@
                                     29 990 ₽
                                 </p>
 
-                                <a
-                                    class="button button--secondary"
-                                    href="product.html?product=phone-lite"
-                                >
+                                <a class="button button--secondary" href="product.html?product=phone-lite">
                                     Подробнее
                                 </a>
 
@@ -232,11 +212,7 @@
 
                         <article class="product-card">
 
-                            <div class="product-card__image">
-                                💻
-                            </div>
-
-                            <div class="product-card__content">
+                            <div class="product-card__image"><picture><source type="image/webp" srcset="images/laptop-480.webp 480w, images/laptop-960.webp 960w" sizes="(min-width: 1280px) 360px, (min-width: 640px) 45vw, 100vw"><img src="images/laptop.svg" width="800" height="500" alt="Ноутбук Air 15" decoding="async" loading="lazy"></source></picture></div><div class="product-card__content">
 
                                 <p class="product-card__category">
                                     Ноутбуки
@@ -255,10 +231,7 @@
                                     79 990 ₽
                                 </p>
 
-                                <a
-                                    class="button button--secondary"
-                                    href="product.html?product=laptop-air"
-                                >
+                                <a class="button button--secondary" href="product.html?product=laptop-air">
                                     Подробнее
                                 </a>
 
@@ -269,11 +242,7 @@
 
                         <article class="product-card">
 
-                            <div class="product-card__image">
-                                💻
-                            </div>
-
-                            <div class="product-card__content">
+                            <div class="product-card__image"><picture><source type="image/webp" srcset="images/laptop-480.webp 480w, images/laptop-960.webp 960w" sizes="(min-width: 1280px) 360px, (min-width: 640px) 45vw, 100vw"><img src="images/laptop.svg" width="800" height="500" alt="Notebook Pro 16" decoding="async" loading="lazy"></source></picture></div><div class="product-card__content">
 
                                 <p class="product-card__category">
                                     Ноутбуки
@@ -292,10 +261,7 @@
                                     109 990 ₽
                                 </p>
 
-                                <a
-                                    class="button button--secondary"
-                                    href="product.html?product=laptop-pro"
-                                >
+                                <a class="button button--secondary" href="product.html?product=laptop-pro">
                                     Подробнее
                                 </a>
 
@@ -306,11 +272,7 @@
 
                         <article class="product-card">
 
-                            <div class="product-card__image">
-                                🎧
-                            </div>
-
-                            <div class="product-card__content">
+                            <div class="product-card__image"><picture><source type="image/webp" srcset="images/headphones-480.webp 480w, images/headphones-960.webp 960w" sizes="(min-width: 1280px) 360px, (min-width: 640px) 45vw, 100vw"><img src="images/headphones.svg" width="800" height="500" alt="Sound Pro" decoding="async" loading="lazy"></source></picture></div><div class="product-card__content">
 
                                 <p class="product-card__category">
                                     Наушники
@@ -329,10 +291,7 @@
                                     12 990 ₽
                                 </p>
 
-                                <a
-                                    class="button button--secondary"
-                                    href="product.html?product=sound-pro"
-                                >
+                                <a class="button button--secondary" href="product.html?product=sound-pro">
                                     Подробнее
                                 </a>
 
@@ -343,11 +302,7 @@
 
                         <article class="product-card">
 
-                            <div class="product-card__image">
-                                🎧
-                            </div>
-
-                            <div class="product-card__content">
+                            <div class="product-card__image"><picture><source type="image/webp" srcset="images/headphones-480.webp 480w, images/headphones-960.webp 960w" sizes="(min-width: 1280px) 360px, (min-width: 640px) 45vw, 100vw"><img src="images/headphones.svg" width="800" height="500" alt="Sound Mini" decoding="async" loading="lazy"></source></picture></div><div class="product-card__content">
 
                                 <p class="product-card__category">
                                     Наушники
@@ -366,10 +321,7 @@
                                     7 990 ₽
                                 </p>
 
-                                <a
-                                    class="button button--secondary"
-                                    href="product.html?product=sound-mini"
-                                >
+                                <a class="button button--secondary" href="product.html?product=sound-mini">
                                     Подробнее
                                 </a>
 
@@ -379,7 +331,7 @@
 
                     </div>
 
-                </div>
+                <p class="empty-results" role="status" hidden>Товары не найдены. Попробуйте сбросить фильтры.</p></div>
 
             </div>
 
@@ -403,5 +355,5 @@
     </div>
 </footer>
 
-</body>
+<script src="js/products.js"></script><script src="js/main.js"></script></body>
 </html>
